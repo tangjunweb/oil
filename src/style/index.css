@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #eff4f7;
+}
+html #app,
+body #app {
+  width: 100%;
+  height: 100%;
+}
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color: #333;
+  background-image: inherit !important;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.2s ease;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+.paginationW {
+  margin-top: 20px;
+}
+.el-table .cell {
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+#select_file {
+  position: relative;
+}
+#select_file #tbFileName {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  width: 88px;
+  height: 36px;
+  vertical-align: top;
+}
+#select_file #tbFileName:focus {
+  outline: none;
+}
+#select_file .fileInfoBox {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#select_file .fileInfoBox #fileNameBox {
+  display: inline-block;
+}
+.el-input,
+.el-select,
+.el-textarea {
+  max-width: 460px;
+}
+.el-message {
+  border: 1px solid #e0e0e0;
+}
+.invoiceWrapper .el-select .el-input.is-disabled .el-input__inner,
+.spendingWrapper .el-select .el-input.is-disabled .el-input__inner {
+  cursor: pointer;
+}
+.blockBtn .el-button {
+  width: 100%;
+  background-color: #00b5ff;
+}
+.blockBtn .el-button:hover,
+.blockBtn .el-button:focus {
+  background-color: #00acf2;
+}
+.blockBtn .el-button:active {
+  background-color: #00acf2;
+}
+.login_form .el-form-item__content .icon_user,
+.login_form .el-form-item__content .icon_password {
+  position: absolute;
+  left: 15px;
+  top: 9px;
+  z-index: 10;
+  font-size: 0;
+}
+.login_form .el-form-item__content .icon_user img,
+.login_form .el-form-item__content .icon_password img {
+  width: auto;
+}
+.login_form .el-form-item__content .el-input input {
+  padding-left: 48px;
+}
+.el-menu {
+  background: #f4f4f4;
+  border: 0;
+}
+.el-icon-arrow-right {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  display: none;
+}
+.el-submenu .el-menu-item {
+  margin: 0 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.el-menu .el-menu-item {
+  padding-right: 45px;
+  font-size: 14px;
+}
+.el-submenu .el-menu-item {
+  font-size: 12px;
+}
+.el-menu-item.is-active {
+  color: #c8000b;
+  background: #fff;
+}
+.el-submenu__icon-arrow {
+  font-size: 16px;
+  margin-top: -8px;
+  font-weight: bold;
+}
+.el-submenu__title {
+  margin-bottom: 2px;
+}
+.is-active .el-submenu__title {
+  background: #fff;
+}
+.is-active .el-submenu__title,
+.is-active .el-submenu__title .el-submenu__icon-arrow {
+  color: #c8000b;
+}
+.el-menu-item,
+.el-submenu__title {
+  white-space: inherit;
+  line-height: inherit;
+}
+.sidebar .is-active .el-submenu__title .sidebar_icon img,
+.sidebar .is-active.el-menu-item .sidebar_icon img {
+  opacity: 1;
+}
+.el-submenu__title:focus,
+.el-submenu__title:hover,
+.el-menu-item:focus,
+.el-menu-item:hover {
+  outline: 0;
+  background-color: #ffffff;
+}
+.sidebar .el-menu-item.is-active .el-icon-arrow-right {
+  display: block;
+}
+.sidebar .el-menu-item.is-active .circular {
+  background: #c8000b;
+}
+.opration .btn {
+  width: 120px;
+  font-size: 12px;
+}
+.opration .btn i {
+  margin-right: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.opration .recive {
+  background: #00b6fc;
+  border: 1px solid #00b6fc;
+  color: #fff;
+  background-color: #00b6fc;
+}
+.opration .recive:hover,
+.opration .recive:focus {
+  background-color: #00adef;
+}
+.opration .recive:active {
+  background-color: #00adef;
+}
+.opration .gap {
+  width: 38px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.opration .gap i {
+  font-weight: bold;
+  font-size: 16px;
+}
+.opration .save {
+  background: #608fc4;
+  color: #fff;
+  background-color: #608fc4;
+}
+.opration .save i {
+  margin-right: 8px;
+}
+.opration .save:hover,
+.opration .save:focus {
+  background-color: #5b88ba;
+}
+.opration .save:active {
+  background-color: #5b88ba;
+}
+.opration .save img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+.opration .export {
+  background: #00b6fc;
+  color: #fff;
+  background-color: #00b6fc;
+}
+.opration .export i {
+  margin-right: 8px;
+}
+.opration .export:hover,
+.opration .export:focus {
+  background-color: #00adef;
+}
+.opration .export:active {
+  background-color: #00adef;
+}
+.opration .export img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+.opration .search_btn {
+  background: #608fc4;
+  color: #fff;
+  background-color: #608fc4;
+}
+.opration .search_btn i {
+  margin-right: 8px;
+}
+.opration .search_btn:hover,
+.opration .search_btn:focus {
+  background-color: #5b88ba;
+}
+.opration .search_btn:active {
+  background-color: #5b88ba;
+}
+.opration .search_btn img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+.white {
+  background: #fff;
+  margin-bottom: 20px;
+  border: solid 1px #e0e4e6;
+}
+.white.nogap {
+  margin-bottom: 0;
+}
+.el-form-inline .el-form-item__label {
+  font-size: 12px;
+  margin-left: 20px;
+  color: #353638;
+  width: 80px !important;
+}
+.el-input--suffix .el-input__inner {
+  padding-right: 15px;
+}

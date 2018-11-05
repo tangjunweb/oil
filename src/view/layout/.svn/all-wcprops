@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/Oil/!svn/ver/10/trunk/client/src/view/layout
+END
+index.js
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/Oil/!svn/ver/2/trunk/client/src/view/layout/index.js
+END
+AppMain.vue
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/Oil/!svn/ver/2/trunk/client/src/view/layout/AppMain.vue
+END
+Breadcrumb.vue
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Oil/!svn/ver/2/trunk/client/src/view/layout/Breadcrumb.vue
+END
+Home.vue
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/Oil/!svn/ver/7/trunk/client/src/view/layout/Home.vue
+END
+Sidebar.vue
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Oil/!svn/ver/10/trunk/client/src/view/layout/Sidebar.vue
+END
+Headerbar.vue
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Oil/!svn/ver/10/trunk/client/src/view/layout/Headerbar.vue
+END
+Layout.vue
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/Oil/!svn/ver/2/trunk/client/src/view/layout/Layout.vue
+END

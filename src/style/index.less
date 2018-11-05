@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: #eff4f7;
+    #app {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.clearfix {
+    &:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    -webkit-text-fill-color: #333;
+    background-image: inherit !important;
+}
+
+//vue router transition css
+.fade-enter-active,
+.fade-leave-active {
+    transition: all .2s ease
+}
+
+.fade-enter,
+.fade-leave-active {
+    opacity: 0;
+}
+
+//main-container全局样式
+//页码统一样式
+.paginationW {
+    margin-top: 20px;
+}
+
+//table统一样式
+.el-table .cell {
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+// 上传样式统一
+#select_file {
+    position: relative;
+    #tbFileName {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        width: 88px;
+        height: 36px;
+        vertical-align: top; // cursor: pointer;
+        &:focus {
+            outline: none;
+        }
+    }
+    .fileInfoBox {
+        position: absolute;
+        left: 0;
+        top: 0;
+        #fileNameBox {
+            display: inline-block;
+        }
+    }
+}
+
+.el-input,
+.el-select,
+.el-textarea {
+    max-width: 460px;
+}
+
+.el-message {
+    border: 1px solid #e0e0e0;
+}
+
+.invoiceWrapper .el-select .el-input.is-disabled .el-input__inner,
+.spendingWrapper .el-select .el-input.is-disabled .el-input__inner {
+    cursor: pointer;
+}
+
+// btn
+.tap-color(@color, @opacity: .95) {
+    background-color: @color;
+    &:hover,
+    &:focus {
+        background-color: @color * @opacity;
+    }
+    &:active {
+        background-color: @color * @opacity;
+    }
+}
+
+.blockBtn .el-button {
+    width: 100%;
+    .tap-color(#00b5ff)
+}
+
+.login_form {
+    .el-form-item__content {
+        .icon_user,
+        .icon_password {
+            position: absolute;
+            left: 15px;
+            top: 9px;
+            z-index: 10;
+            font-size: 0;
+            img {
+                width: auto;
+            } // input {
+            //     background-image: url(../assets/user.png);
+            //     background-repeat: no-repeat;
+            //     background-position: 12px center;
+            // }
+        } // input {
+        //     background-image: url(../assets/password.png);
+        //     background-repeat: no-repeat;
+        //     background-position: 12px center;
+        // }
+        .el-input {
+            input {
+                padding-left: 48px;
+            }
+        }
+    }
+}
+
+// 导航
+.el-menu {
+    background: #f4f4f4;
+    border: 0;
+}
+
+.el-icon-arrow-right {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    display: none;
+}
+
+.el-submenu .el-menu-item {
+    margin: 0 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.el-menu .el-menu-item {
+    padding-right: 45px;
+    font-size: 14px
+}
+
+.el-submenu .el-menu-item {
+    font-size: 12px;
+}
+
+.el-menu-item.is-active {
+    color: #c8000b;
+    background: #fff;
+}
+
+.el-submenu__icon-arrow {
+    font-size: 16px;
+    margin-top: -8px;
+    font-weight: bold;
+}
+
+.el-submenu__title {
+    margin-bottom: 2px;
+}
+
+.is-active .el-submenu__title {
+    background: #fff;
+}
+
+.is-active .el-submenu__title,
+.is-active .el-submenu__title .el-submenu__icon-arrow {
+    color: #c8000b;
+}
+
+// .sidebar .is-active .el-submenu__title .sidebar_icon::after,
+// .sidebar .is-active.el-menu-item .sidebar_icon::after{
+//   background: rgba(255, 255, 255, 0);
+// }
+.el-menu-item,
+.el-submenu__title {
+    white-space: inherit;
+    line-height: inherit
+}
+
+.sidebar .is-active .el-submenu__title .sidebar_icon img,
+.sidebar .is-active.el-menu-item .sidebar_icon img {
+    opacity: 1;
+}
+
+.el-submenu__title:focus,
+.el-submenu__title:hover,
+.el-menu-item:focus,
+.el-menu-item:hover {
+    outline: 0;
+    background-color: #ffffff
+}
+
+.sidebar .el-menu-item.is-active .el-icon-arrow-right {
+    display: block;
+}
+
+.sidebar .el-menu-item.is-active .circular {
+    background: #c8000b;
+}
+
+// btn
+.opration {
+    .btn {
+        width: 120px;
+        font-size: 12px;
+        i {
+            margin-right: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+    .recive {
+        background: #00b6fc;
+        border: 1px solid #00b6fc;
+        color: #fff;
+        .tap-color(#00b6fc)
+    }
+    .gap {
+        width: 38px;
+        padding-left: 0;
+        padding-right: 0;
+        i {
+            font-weight: bold;
+            font-size: 16px;
+        }
+    }
+    .save {
+        background: #608fc4;
+        color: #fff;
+        i {
+            margin-right: 8px;
+        }
+        .tap-color(#608fc4);
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -2px;
+        }
+    }
+    .export{
+        background: #00b6fc;
+        color: #fff;
+        i {
+            margin-right: 8px;
+        }
+        .tap-color(#00b6fc);
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -2px;
+        }
+    }
+    .search_btn{
+        background: #608fc4;
+        color: #fff;
+        i {
+            margin-right: 8px;
+        }
+        .tap-color(#608fc4);
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -2px;
+        }
+    }
+}
+
+.white {
+    background: #fff;
+    margin-bottom: 20px;
+    border: solid 1px #e0e4e6;
+    &.nogap {
+        margin-bottom: 0;
+    }
+}
+
+.el-form-inline .el-form-item__label {
+    font-size: 12px;
+    margin-left: 20px;
+    color: #353638;
+    width:80px !important;
+}
+.el-input--suffix .el-input__inner{
+    padding-right: 15px;
+}
